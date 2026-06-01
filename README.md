@@ -156,4 +156,8 @@ DO_SPACES_CDN_URL=https://tu-space.nyc3.cdn.digitaloceanspaces.com
 npm install
 npm run start:dev
 ```
+
+## Deploy
+
+Ver guia para Ubuntu/DigitalOcean en `docs/deploy-ubuntu.md`.
 # cmd-imges-market
