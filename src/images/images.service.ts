@@ -36,6 +36,19 @@ const CHANNEL_RULES: Record<SalesChannel, ChannelImageRules> = {
     height: 1000,
     background: "#ffffff",
     quality: 90
+  },
+  // ML pide 500x500 como minimo y recomienda 1200x1200, que es lo que
+  // habilita el zoom en la ficha. Las fotos de Coresa vienen en 300x300 y por
+  // eso ML marca la publicacion en infraccion.
+  //
+  // Agrandar no agrega detalle: la imagen pasa el control de tamaño pero se ve
+  // igual de blanda. El arreglo de fondo es que el proveedor mande fotos mas
+  // grandes; esto evita la infraccion mientras tanto.
+  [SalesChannel.MercadoLibre]: {
+    width: 1200,
+    height: 1200,
+    background: "#ffffff",
+    quality: 90
   }
 };
 
