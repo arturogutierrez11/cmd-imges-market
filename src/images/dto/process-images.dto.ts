@@ -2,7 +2,8 @@ import { ArrayMaxSize, ArrayMinSize, IsArray, IsEnum, IsString, IsUrl, MaxLength
 
 export enum SalesChannel {
   Fravega = "fravega",
-  OnCity = "oncity"
+  OnCity = "oncity",
+  MercadoLibre = "mercadolibre"
 }
 
 export class ProcessImagesDto {

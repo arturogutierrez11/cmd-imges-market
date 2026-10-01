@@ -17,6 +17,22 @@ API NestJS para recibir imagenes de producto por URL, redimensionarlas para mark
 }
 ```
 
+## Canales y tamanos
+
+| channel | tamano | fondo | calidad |
+|---|---|---|---|
+| `fravega` | 1000x1000 | blanco | 90 |
+| `oncity` | 1000x1000 | blanco | 90 |
+| `mercadolibre` | 1200x1200 | blanco | 90 |
+
+MercadoLibre pide 500x500 como minimo y recomienda 1200x1200, que es lo que
+habilita el zoom en la ficha. Las fotos de Coresa vienen en 300x300 y ML marca
+la publicacion en infraccion por eso.
+
+Agrandar no agrega detalle: la imagen pasa el control de tamano pero se ve
+igual de blanda. El arreglo de fondo es que el proveedor mande fotos mas
+grandes.
+
 ## Endpoint OnCity
 
 `POST /images/oncity/:sku/process`
